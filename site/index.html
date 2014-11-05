@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Grunt all the things!</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="external/min.css">
+
+		<script src="external/modernizr.js"></script>
+	</head>
+
+	<body>
+		<article class="wrapper">
+			<h1>Grunt tasks</h1>
+			<section>
+				<h2>Modernizr</h2>
+
+				<p>grunt-modernizr will crawl your project for Modernizr test references and save out a minified, uglified, customized version using only the tests you've used in your JavaScript or (S)CSS.</p>
+
+				<p>Grunt task: <code>grunt modernizr:dist</code></p>
+
+				<p><strong>NOTE:</strong> If you comment out Modernzir specific tests in CSS or JS the Grunt Task will output as though the test is being used e.g.</p>
+
+				<code>
+					// .svg { foo: bar; }<br>
+					.opacity { foo: bar; }
+				</code>
+
+				<p>Both <code>.svg</code> and <code>.opacity</code> in the above example would be included in the Modernizr Grunt build so commented out Modernizr tests need to be removed before build or simply don't comment out Modernizr tests. Just to reiterate this applies to both JS and (S)CSS.</p>
+
+				<h3>References</h3>
+				<dl>
+					<dt>GIT</dt>
+					<dd><a href="https://github.com/Modernizr/grunt-modernizr">grunt-modernizr</a></dd>
+					<dt>Bower</dt>
+					<dd><a href="http://bower.io/">http://bower.io/</a> (for latest dev version of Modernizr)</dd>
+				</dl>
+
+				<h3>Files</h3>
+				<p>TODO</p>
+			</section>
+
+			<section>
+				<h2>SVG sprite with PNG fallback</h2>
+				<p>Grunt plugin to create SVG sprites with PNG fallback and (S)CSS file with image reference, sizes and coordinates. Images will be optimised as part of the grunt task also.</p>
+
+				<p>Grunt task: <code>grunt sprite</code></p>
+
+				<p><strong>NOTE:</strong> SVGs must be created at the correct size so the SVG and PNG are identical to match the (S)CSS coordinates output.</p>
+
+				<h3>Naming convention:</h3>
+				<p>The CSS naming convention is based on the filename and a prefix. In the grunt file I've passed the option to prefix the CSS name with <code>icon--</code> e.g. naming a file square.svg will result in the CSS name <code>icon--square</code></p>
+
+				<h3>CAVEATS:</h3>
+				<ul>
+					<li>If you need to animate and/or scale an SVG you will have to use a single file</li>
+					<li>For hover effects include the hover state as a SVG and manually apply the CSS or use CSS <code>opacity</code>, possibliy use <code>background-color</code> depending on the how the icon is applied</li>
+				</ul>
+
+				<div class="flex">
+					<div class="flex__container">
+						<h3>SVG</h3>
+						<ul class="reset-list icon-list">
+							<li><a href="#"><span class="icon icon--facebook">Twitter</span></a></li>
+							<li><a href="#"><span class="icon icon--twitter">Twitter</span></a></li>
+							<li><a href="#"><span class="icon icon--sign-up">Sign up</span></a></li>
+							<li><a href="#" title="Earth's Future">Earth's Future <span class="icon icon--open-access icon--open-access-home"></span><span class="icon__text--open-access">Open Access</span></a></li>
+							<li><a class="external-link" href="http://www.earthinteractions.org/" title="Earth Interactions">Earth Interactions<em class="icon icon--external-link"> External Link</em></a></li>
+						</ul>
+					</div>
+					<div class="flex__container">
+						<h3>PNG</h3>
+						<ul class="no-svg reset-list icon-list">
+							<li><a href="#"><span class="icon icon--facebook">Twitter</span></a></li>
+							<li><a href="#"><span class="icon icon--twitter">Twitter</span></a></li>
+							<li><a href="#"><span class="icon icon--sign-up">Sign up</span></a></li>
+							<li><a href="#" title="Earth's Future">Earth's Future <span class="icon icon--open-access icon--open-access-home"></span><span class="icon__text--open-access">Open Access</span></a></li>
+							<li><a class="external-link" href="http://www.earthinteractions.org/" title="Earth Interactions">Earth Interactions<em class="icon icon--external-link"> External Link</em></a></li>
+						</ul>
+					</div>
+				</div>
+
+				<h3>References</h3>
+				<dl>
+					<dt>GIT</dt>
+					<dd><a href="https://github.com/drdk/grunt-dr-svg-sprites">grunt-dr-svg-sprites</a></dd>
+				</dl>
+			</section>
+		</article>
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="external/min.js"></script>
+	</body>
+</html>

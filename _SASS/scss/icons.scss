@@ -1,0 +1,35 @@
+.icon {
+	background-repeat: no-repeat;
+	display: block;
+	text-indent: -999em;
+
+	&--facebook {
+		background-color: #3b5999;
+		border: solid #3b5999;
+		border-width: 3px 10px;
+	}
+
+	&--twitter {
+		background-color: #55acee;
+		border: solid #55acee;
+		border-width: 8px 7px;
+	}
+
+	&--sign-up {
+		background-color: #00a47a;
+		border: solid #00a47a;
+		border-width: 9px 6px;
+	}
+
+	&--open-access {
+		display: inline-block;
+		margin: 0 4px 0 11px;
+		vertical-align: baseline;
+	}
+
+	&--external-link {
+		display: inline-block;
+		margin: 0 0 0 4px;
+		vertical-align: baseline;
+	}
+}

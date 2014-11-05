@@ -1,0 +1,47 @@
+.icon--external-link {
+	width: 12px;
+	height: 11px;
+	background-position: 0 0;
+}
+
+.icon--open-access-home {
+	width: 8px;
+	height: 13px;
+	background-position: 0 -12px;
+}
+
+.icon--padlock1 {
+	width: 8px;
+	height: 13px;
+	background-position: -13px 0;
+}
+
+.icon--padlock2 {
+	width: 8px;
+	height: 13px;
+	background-position: -22px 0;
+}
+
+.icon--sign-up {
+	width: 24px;
+	height: 18px;
+	background-position: -31px 0;
+}
+
+.icon--twitter {
+	width: 22px;
+	height: 20px;
+	background-position: 0 -26px;
+}
+
+.icon--external-link, .icon--open-access-home, .icon--padlock1, .icon--padlock2, .icon--sign-up, .icon--twitter {
+	background-size: 56px 47px;
+}
+
+.no-svg .icon--external-link, .no-svg .icon--open-access-home, .no-svg .icon--padlock1, .no-svg .icon--padlock2, .no-svg .icon--sign-up, .no-svg .icon--twitter {
+	background-image: url("../../site/external/images/icon-sprite.png");
+}
+
+.icon--external-link, .icon--open-access-home, .icon--padlock1, .icon--padlock2, .icon--sign-up, .icon--twitter {
+	background-image: url("../../site/external/images/icon-sprite.svg");
+}

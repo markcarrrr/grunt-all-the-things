@@ -1,0 +1,1 @@
+var Modernizr=window.Modernizr,tests={touch:Modernizr.touch,fontface:Modernizr.fontface,localstorage:Modernizr.localstorage};
