@@ -1,47 +1,83 @@
+.icon--close-style1 {
+	width: 12px;
+	height: 12px;
+	background-position: 0 0;
+}
+
+.icon--close-style2 {
+	width: 12px;
+	height: 12px;
+	background-position: 0 -13px;
+}
+
 .icon--external-link {
 	width: 12px;
 	height: 11px;
-	background-position: 0 0;
+	background-position: 0 -26px;
+}
+
+.icon--facebook {
+	width: 16px;
+	height: 30px;
+	background-position: 0 -38px;
+}
+
+.icon--highlight {
+	width: 8px;
+	height: 14px;
+	background-position: 0 -69px;
+}
+
+.icon--librarian {
+	width: 10px;
+	height: 10px;
+	background-position: 0 -84px;
 }
 
 .icon--open-access-home {
 	width: 8px;
 	height: 13px;
-	background-position: 0 -12px;
+	background-position: 0 -95px;
 }
 
 .icon--padlock1 {
 	width: 8px;
 	height: 13px;
-	background-position: -13px 0;
+	background-position: 0 -109px;
 }
 
 .icon--padlock2 {
 	width: 8px;
 	height: 13px;
-	background-position: -22px 0;
+	background-position: 0 -123px;
+}
+
+.icon--search {
+	width: 16px;
+	height: 16px;
+	background-position: 0 -137px;
 }
 
 .icon--sign-up {
 	width: 24px;
 	height: 18px;
-	background-position: -31px 0;
+	background-position: 0 -154px;
 }
 
 .icon--twitter {
 	width: 22px;
 	height: 20px;
-	background-position: 0 -26px;
+	background-position: 0 -173px;
 }
 
-.icon--external-link, .icon--open-access-home, .icon--padlock1, .icon--padlock2, .icon--sign-up, .icon--twitter {
-	background-size: 56px 47px;
+.icon--close-style1, .icon--close-style2, .icon--external-link, .icon--facebook, .icon--highlight, .icon--librarian, .icon--open-access-home, .icon--padlock1, .icon--padlock2, .icon--search, .icon--sign-up, .icon--twitter {
+	background-size: 25px 194px;
 }
 
-.no-svg .icon--external-link, .no-svg .icon--open-access-home, .no-svg .icon--padlock1, .no-svg .icon--padlock2, .no-svg .icon--sign-up, .no-svg .icon--twitter {
+.no-svg .icon--close-style1, .no-svg .icon--close-style2, .no-svg .icon--external-link, .no-svg .icon--facebook, .no-svg .icon--highlight, .no-svg .icon--librarian, .no-svg .icon--open-access-home, .no-svg .icon--padlock1, .no-svg .icon--padlock2, .no-svg .icon--search, .no-svg .icon--sign-up, .no-svg .icon--twitter {
 	background-image: url("../../site/external/images/icon-sprite.png");
 }
 
-.icon--external-link, .icon--open-access-home, .icon--padlock1, .icon--padlock2, .icon--sign-up, .icon--twitter {
+.icon--close-style1, .icon--close-style2, .icon--external-link, .icon--facebook, .icon--highlight, .icon--librarian, .icon--open-access-home, .icon--padlock1, .icon--padlock2, .icon--search, .icon--sign-up, .icon--twitter {
 	background-image: url("../../site/external/images/icon-sprite.svg");
 }

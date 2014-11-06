@@ -5,12 +5,11 @@
     "grunt": "latest",
     "grunt-contrib-cssmin": "latest",
     "grunt-contrib-imagemin": "^0.9.1",
-    "grunt-contrib-sass": "latest",
+    "grunt-sass": "latest",
     "grunt-contrib-uglify": "latest",
     "grunt-contrib-watch": "latest",
     "grunt-dr-svg-sprites": "^0.9.15",
     "grunt-modernizr": "latest",
-    "grunt-newer": "^0.8.0",
-    "grunt-svgstore": "^0.3.6"
+    "grunt-newer": "^0.8.0"
   }
 }

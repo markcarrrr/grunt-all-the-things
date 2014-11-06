@@ -10,17 +10,12 @@ module.exports = function (grunt) {
 
 		watch: {
 			sass: {
-				files: "**/*.scss",
+				files: "_SASS/**/*.scss",
 				tasks: ["sass"]
 			},
 
-			css: {
-				files: "**/*.css",
-				tasks: ["cssmin"]
-			},
-
 			scripts: {
-				files: ["**/*.js"],
+				files: ["_JAVASCRIPT/*.js"],
 				tasks: ["uglify"]
 			}
 		},
@@ -28,20 +23,11 @@ module.exports = function (grunt) {
 		sass: {
 			dest: {
 				options: {
+					sourceMap: true,
 					style: "compressed"
 				},
 				files: {
-					"_SASS/_EXPORT/min.css" : "_SASS/imports.scss"
-				}
-			}
-		},
-
-		cssmin: {
-			combine: {
-				files: {
-					"<%= path.assets %>min.css": [
-						"_SASS/_EXPORT/min.css"
-					]
+					"<%= path.assets %>min.css" : "_SASS/imports.scss"
 				}
 			}
 		},
@@ -109,7 +95,7 @@ module.exports = function (grunt) {
 					cssPrefix: "",
 					cssSuffix: "scss",
 					cssPath: "_SASS/scss/",
-					layout: "packed",
+					layout: "vertical",
 					unit: 1
 				}
 			}
@@ -118,15 +104,14 @@ module.exports = function (grunt) {
 
 	// Plugins
 	grunt.loadNpmTasks("grunt-contrib-watch");
-	grunt.loadNpmTasks("grunt-contrib-sass");
 	grunt.loadNpmTasks("grunt-contrib-uglify");
-	grunt.loadNpmTasks("grunt-contrib-cssmin");
+	grunt.loadNpmTasks("grunt-sass");
 	grunt.loadNpmTasks("grunt-modernizr");
 	grunt.loadNpmTasks('grunt-newer');
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.loadNpmTasks('grunt-dr-svg-sprites');
 
 	// Tasks
-	grunt.registerTask("default", ["watch"]);
+	grunt.registerTask("default", ["sass", "watch"]);
 	grunt.registerTask("sprite", ["newer:imagemin:sprites", "dr-svg-sprites", "newer:imagemin:all"]);
 };
