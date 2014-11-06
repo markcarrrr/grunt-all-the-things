@@ -7,7 +7,7 @@
 
 grunt-modernizr will crawl your project for Modernizr test references and save out a minified, uglified, customized version using only the tests you've used in your JavaScript or (S)CSS.  
 
-Grunt task: <code>grunt modernizr:dist</code>  
+Grunt task: <code>grunt modernizr</code>  
 
 <strong>NOTE:</strong> If you comment out Modernzir specific tests in CSS or JS the Grunt Task will output as though the test is being used e.g.
 
