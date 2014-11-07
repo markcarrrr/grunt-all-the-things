@@ -59,6 +59,9 @@ module.exports = function (grunt) {
 						"_SASS/*/*.scss",
 						"_JAVASCRIPT/*.js"
 					]
+				},
+				"extra" : {
+					"load" : false
 				}
 			}
 		},
@@ -67,17 +70,9 @@ module.exports = function (grunt) {
 			all: {
 				files: [{
 					expand: true,
-					cwd: "_SPRITES/",
-					src: ["<%= path.assets %><%= path.images %>*.[png,svg]"],
-					dest: "_SPRITES/"
-				}]
-			},
-			sprites: {
-				files: [{
-					expand: true,
-					cwd: "_SPRITES/",
-					src: ["**/*.svg"],
-					dest: "_SPRITES/"
+					cwd: "<%= path.assets %><%= path.images %>",
+					src: ["**/*.{png,gif}"],
+					dest: "<%= path.assets %><%= path.images %>"
 				}]
 			}
 		},
@@ -95,7 +90,7 @@ module.exports = function (grunt) {
 					cssPrefix: "",
 					cssSuffix: "scss",
 					cssPath: "_SASS/scss/",
-					layout: "vertical",
+					layout: "packed",
 					unit: 1
 				}
 			}
@@ -112,6 +107,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-dr-svg-sprites');
 
 	// Tasks
-	grunt.registerTask("default", ["sass", "watch"]);
-	grunt.registerTask("sprite", ["newer:imagemin:sprites", "dr-svg-sprites", "newer:imagemin:all"]);
+	grunt.registerTask("default", ["watch"]);
+	grunt.registerTask("build", ["sass", "modernizr", "newer:imagemin:all"]);
+	grunt.registerTask("sprite", ["dr-svg-sprites", "newer:imagemin:all"]);
 };

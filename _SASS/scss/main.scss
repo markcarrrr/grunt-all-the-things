@@ -97,13 +97,9 @@ section {
 	&-container {
 		background-color: #F6F6F6;
 		border-top: 0 #bcbcbc solid;
-		height: 1.30769em;
-		padding: 0.23077em 0.92308em 0 0;
+		display: inline-block;
+		padding: 0.23077em 0.92308em 0.23077em .3em;
 		position: relative;
-		right: 0;
-		text-align: right;
-		width: 12.07692em;
-		top: 34px;
 	}
 
 		&-slope {
@@ -121,7 +117,5 @@ section {
 			font-family: 'Open Sans Regular', 'Open Sans';
 			font-size: .69231em;
 			font-weight: 600;
-			position: relative;
-			top: -14px;
 		}
 }
