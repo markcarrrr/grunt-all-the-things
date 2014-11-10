@@ -40,38 +40,44 @@
 	background-position: -12px -13px;
 }
 
+.icon--menu {
+	width: 18px;
+	height: 12px;
+	background-position: -26px 0;
+}
+
 .icon--open-access {
 	width: 8px;
 	height: 13px;
-	background-position: -26px 0;
+	background-position: -26px -13px;
 }
 
 .icon--search {
 	width: 16px;
 	height: 16px;
-	background-position: -35px 0;
+	background-position: -26px -27px;
 }
 
 .icon--sign-up {
 	width: 24px;
 	height: 18px;
-	background-position: -52px 0;
+	background-position: -45px 0;
 }
 
 .icon--twitter {
 	width: 22px;
 	height: 20px;
-	background-position: -52px -19px;
+	background-position: -45px -19px;
 }
 
-.icon--close-style1, .icon--close-style2, .icon--external-link, .icon--facebook, .icon--free, .icon--highlight, .icon--librarian, .icon--open-access, .icon--search, .icon--sign-up, .icon--twitter {
-	background-size: 77px 56px;
+.icon--close-style1, .icon--close-style2, .icon--external-link, .icon--facebook, .icon--free, .icon--highlight, .icon--librarian, .icon--menu, .icon--open-access, .icon--search, .icon--sign-up, .icon--twitter {
+	background-size: 70px 56px;
 }
 
-.no-svg .icon--close-style1, .no-svg .icon--close-style2, .no-svg .icon--external-link, .no-svg .icon--facebook, .no-svg .icon--free, .no-svg .icon--highlight, .no-svg .icon--librarian, .no-svg .icon--open-access, .no-svg .icon--search, .no-svg .icon--sign-up, .no-svg .icon--twitter {
+.no-svg .icon--close-style1, .no-svg .icon--close-style2, .no-svg .icon--external-link, .no-svg .icon--facebook, .no-svg .icon--free, .no-svg .icon--highlight, .no-svg .icon--librarian, .no-svg .icon--menu, .no-svg .icon--open-access, .no-svg .icon--search, .no-svg .icon--sign-up, .no-svg .icon--twitter {
 	background-image: url("../../site/external/images/icon-sprite.png");
 }
 
-.icon--close-style1, .icon--close-style2, .icon--external-link, .icon--facebook, .icon--free, .icon--highlight, .icon--librarian, .icon--open-access, .icon--search, .icon--sign-up, .icon--twitter {
+.icon--close-style1, .icon--close-style2, .icon--external-link, .icon--facebook, .icon--free, .icon--highlight, .icon--librarian, .icon--menu, .icon--open-access, .icon--search, .icon--sign-up, .icon--twitter {
 	background-image: url("../../site/external/images/icon-sprite.svg");
 }

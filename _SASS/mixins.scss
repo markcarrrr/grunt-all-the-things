@@ -1,0 +1,11 @@
+@mixin clear-float() {
+	&:after {
+		clear: both;
+		content: '';
+		display: table;
+	}
+
+	.lt-ie8 & {
+		min-height: 0;
+	}
+}

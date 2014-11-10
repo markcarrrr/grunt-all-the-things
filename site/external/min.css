@@ -498,69 +498,93 @@ ul, ol {
 /* line 47, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/main.scss */
 li {
   padding: 0 0 1em; }
+  /* line 2, c:/inetpub/wwwroot/_GRUNT/_SASS/mixins.scss */
+  li:after {
+    clear: both;
+    content: '';
+    display: table; }
+  /* line 8, c:/inetpub/wwwroot/_GRUNT/_SASS/mixins.scss */
+  .lt-ie8 li {
+    min-height: 0; }
 
-/* line 51, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/main.scss */
+/* line 53, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/main.scss */
 label {
   font-weight: bold;
   cursor: pointer; }
 
-/* line 56, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/main.scss */
+/* line 58, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/main.scss */
 dt {
   clear: both;
   margin-right: 5px;
   display: inline;
   width: 120px; }
+  /* line 2, c:/inetpub/wwwroot/_GRUNT/_SASS/mixins.scss */
+  dt:after:after {
+    clear: both;
+    content: '';
+    display: table; }
+  /* line 8, c:/inetpub/wwwroot/_GRUNT/_SASS/mixins.scss */
+  .lt-ie8 dt:after {
+    min-height: 0; }
 
-/* line 63, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/main.scss */
+/* line 69, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/main.scss */
 dl dt {
   float: left; }
 
-/* line 67, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/main.scss */
+/* line 73, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/main.scss */
 .wrapper {
   margin: 0 auto;
   max-width: 960px;
   padding: 2em; }
 
-/* line 73, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/main.scss */
+/* line 79, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/main.scss */
 section {
   border-bottom: 1px solid #000; }
 
-/* line 78, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/main.scss */
+/* line 84, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/main.scss */
 .flex__container {
   display: inline-block;
   vertical-align: top;
   width: 45%; }
 
-/* line 86, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/main.scss */
+/* line 92, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/main.scss */
 .icon-list li {
   font-size: 0.8rem;
   line-height: 1.333; }
-/* line 91, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/main.scss */
+/* line 97, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/main.scss */
 .icon-list a {
   font-weight: normal; }
 
-/* line 97, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/main.scss */
-.second-nav__recommend-librarian-container {
-  background-color: #F6F6F6;
-  border-top: 0 #bcbcbc solid;
-  display: inline-block;
-  padding: 0.23077em 0.92308em 0.23077em 0.3em;
-  position: relative; }
-/* line 105, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/main.scss */
-.second-nav__recommend-librarian-slope {
-  border-bottom: 20px solid transparent;
-  border-right: 15px solid #F6F6F6;
-  height: 0;
-  left: -15px;
-  position: absolute;
-  top: 0;
-  width: 0; }
-/* line 115, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/main.scss */
+/* line 103, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/main.scss */
 .second-nav__recommend-librarian-link {
+  background-color: #f6f6f6;
+  display: inline-block;
   color: #333;
   font-family: 'Open Sans Regular', 'Open Sans';
-  font-size: 0.69231em;
-  font-weight: 600; }
+  font-size: 0.8em;
+  font-weight: 600;
+  padding: 4px 8px;
+  position: relative; }
+  /* line 113, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/main.scss */
+  .second-nav__recommend-librarian-link:after {
+    border-bottom: 20px solid transparent;
+    border-right: 15px solid #f6f6f6;
+    content: '';
+    height: 0;
+    left: -15px;
+    position: absolute;
+    top: 0;
+    width: 0; }
+
+/* line 127, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/main.scss */
+.lt-ie8 .flex {
+  min-height: 0; }
+  /* line 130, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/main.scss */
+  .lt-ie8 .flex__container {
+    float: left; }
+/* line 136, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/main.scss */
+.lt-ie8 .second-nav__recommend-librarian-link {
+  float: left; }
 
 /* line 1, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons-sprite.scss */
 .icon--close-style1 {
@@ -605,39 +629,45 @@ section {
   background-position: -12px -13px; }
 
 /* line 43, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons-sprite.scss */
-.icon--open-access {
-  width: 8px;
-  height: 13px;
+.icon--menu {
+  width: 18px;
+  height: 12px;
   background-position: -26px 0; }
 
 /* line 49, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons-sprite.scss */
+.icon--open-access {
+  width: 8px;
+  height: 13px;
+  background-position: -26px -13px; }
+
+/* line 55, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons-sprite.scss */
 .icon--search {
   width: 16px;
   height: 16px;
-  background-position: -35px 0; }
+  background-position: -26px -27px; }
 
-/* line 55, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons-sprite.scss */
+/* line 61, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons-sprite.scss */
 .icon--sign-up {
   width: 24px;
   height: 18px;
-  background-position: -52px 0; }
+  background-position: -45px 0; }
 
-/* line 61, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons-sprite.scss */
+/* line 67, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons-sprite.scss */
 .icon--twitter {
   width: 22px;
   height: 20px;
-  background-position: -52px -19px; }
+  background-position: -45px -19px; }
 
-/* line 67, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons-sprite.scss */
-.icon--close-style1, .icon--close-style2, .icon--external-link, .icon--facebook, .icon--free, .icon--highlight, .icon--librarian, .icon--open-access, .icon--search, .icon--sign-up, .icon--twitter {
-  background-size: 77px 56px; }
+/* line 73, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons-sprite.scss */
+.icon--close-style1, .icon--close-style2, .icon--external-link, .icon--facebook, .icon--free, .icon--highlight, .icon--librarian, .icon--menu, .icon--open-access, .icon--search, .icon--sign-up, .icon--twitter {
+  background-size: 70px 56px; }
 
-/* line 71, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons-sprite.scss */
-.no-svg .icon--close-style1, .no-svg .icon--close-style2, .no-svg .icon--external-link, .no-svg .icon--facebook, .no-svg .icon--free, .no-svg .icon--highlight, .no-svg .icon--librarian, .no-svg .icon--open-access, .no-svg .icon--search, .no-svg .icon--sign-up, .no-svg .icon--twitter {
+/* line 77, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons-sprite.scss */
+.no-svg .icon--close-style1, .no-svg .icon--close-style2, .no-svg .icon--external-link, .no-svg .icon--facebook, .no-svg .icon--free, .no-svg .icon--highlight, .no-svg .icon--librarian, .no-svg .icon--menu, .no-svg .icon--open-access, .no-svg .icon--search, .no-svg .icon--sign-up, .no-svg .icon--twitter {
   background-image: url("../../site/external/images/icon-sprite.png"); }
 
-/* line 75, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons-sprite.scss */
-.icon--close-style1, .icon--close-style2, .icon--external-link, .icon--facebook, .icon--free, .icon--highlight, .icon--librarian, .icon--open-access, .icon--search, .icon--sign-up, .icon--twitter {
+/* line 81, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons-sprite.scss */
+.icon--close-style1, .icon--close-style2, .icon--external-link, .icon--facebook, .icon--free, .icon--highlight, .icon--librarian, .icon--menu, .icon--open-access, .icon--search, .icon--sign-up, .icon--twitter {
   background-image: url("../../site/external/images/icon-sprite.svg"); }
 
 /* line 1, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
@@ -687,26 +717,36 @@ section {
   /* line 53, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
   .icon--librarian {
     padding-right: 4px; }
-  /* line 58, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
+  /* line 57, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
+  .icon--menu {
+    background-color: #004273;
+    border: solid #004273;
+    border-width: 18px 15px;
+    height: 48px;
+    width: 48px; }
+  /* line 65, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
   .icon--highlight {
     margin: 0 4px 0 0;
     vertical-align: middle; }
-  /* line 64, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
+  /* line 71, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
+  .icon--close-style2, .icon--close-style1 {
+    display: block; }
+  /* line 76, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
   .icon--open-access, .icon--free {
     margin: 0 4px 0 11px; }
-  /* line 71, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
+  /* line 83, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
   .icon__text--highlight, .icon__text--open-access, .icon__text--free {
     font-size: 0.84615em; }
-  /* line 75, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
+  /* line 87, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
   .icon__text--highlight {
     color: #e8711a; }
-  /* line 79, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
+  /* line 91, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
   .icon__text--open-access {
     color: #89398D; }
-  /* line 83, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
+  /* line 95, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
   .icon__text--free {
     color: #cc8e2f; }
-  /* line 90, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
+  /* line 102, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
   .icon--previous-style1, .icon--next-style1 {
     border-bottom: 6px solid transparent;
     border-right: 6px solid #bbb;
@@ -717,7 +757,7 @@ section {
     position: relative;
     text-indent: -999em;
     width: 0; }
-    /* line 101, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
+    /* line 113, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
     .icon--previous-style1:after, .icon--next-style1:after {
       border-bottom: 4px solid transparent;
       border-right: 4px solid #eee;
@@ -728,17 +768,17 @@ section {
       position: absolute;
       top: -4px;
       width: 0; }
-  /* line 114, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
+  /* line 126, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
   .icon--next-style1 {
     border-right: 0;
     border-left: 6px solid #bbb; }
-    /* line 118, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
+    /* line 130, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
     .icon--next-style1:after {
       border-right: 0;
       border-left: 4px solid #eee;
       left: -6px; }
 
-/* line 128, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
+/* line 140, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
 .journal-overview__link--close {
   background-color: #585858;
   border-radius: 2px;
@@ -747,7 +787,7 @@ section {
   line-height: 1;
   padding: 3px; }
 
-/* line 137, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
+/* line 149, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
 .figure-viewer__button {
   background-color: #eee;
   display: inline-block;
@@ -759,11 +799,11 @@ section {
   vertical-align: top;
   width: 8px; }
 
-/* line 149, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
+/* line 161, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
 span.figure-viewer__button {
   background-color: transparent; }
 
-/* line 153, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
+/* line 165, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
 .easi-search__drop-arrow {
   border-left: 3px solid transparent;
   border-right: 3px solid transparent;
@@ -771,6 +811,130 @@ span.figure-viewer__button {
   height: 0;
   -moz-transform: scale(0.9999);
   width: 0; }
+
+/* line 175, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
+.button--back {
+  background-color: #fff;
+  border: 0;
+  height: 32px;
+  position: relative;
+  width: 32px; }
+  /* line 182, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
+  .button--back:after {
+    border-bottom: 8px solid #fff;
+    border-top: 8px solid #fff;
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0; }
+/* line 195, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
+.button__inner--back {
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #429fdd;
+  border-top: 15px solid transparent;
+  display: block;
+  height: 0;
+  left: 50%;
+  margin: -15px 0 0 -8px;
+  position: absolute;
+  text-indent: -999em;
+  top: 50%;
+  width: 0; }
+  /* line 208, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
+  .button__inner--back:after {
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #fff;
+    border-top: 10px solid transparent;
+    content: '';
+    height: 0;
+    left: 6px;
+    position: absolute;
+    top: -10px;
+    width: 0; }
+/* line 223, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
+.button--previous-style1, .button--next-style1 {
+  background-color: #fff;
+  border: 0;
+  height: 32px;
+  position: relative;
+  width: 32px; }
+  /* line 230, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
+  .button--previous-style1:after, .button--next-style1:after {
+    border-bottom: 8px solid #fff;
+    border-top: 8px solid #fff;
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0; }
+/* line 244, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
+.button__inner--previous-style1, .button__inner--next-style1 {
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #bbb;
+  border-top: 15px solid transparent;
+  display: block;
+  height: 0;
+  left: 50%;
+  margin: -15px 0 0 -8px;
+  position: absolute;
+  text-indent: -999em;
+  top: 50%;
+  width: 0; }
+  /* line 257, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
+  .button__inner--previous-style1:after, .button__inner--next-style1:after {
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #fff;
+    border-top: 10px solid transparent;
+    content: '';
+    height: 0;
+    left: 6px;
+    position: absolute;
+    top: -10px;
+    width: 0; }
+/* line 270, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
+.button__inner--next-style1 {
+  border-left: 15px solid #bbb;
+  border-right: 0; }
+  /* line 274, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
+  .button__inner--next-style1:after {
+    border-left: 10px solid #fff;
+    border-right: 0;
+    left: -16px; }
+
+/* line 291, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
+.lt-ie8 .icon--facebook, .lt-ie8 .icon--twitter, .lt-ie8 .icon--sign-up, .lt-ie8 .icon--highlight, .lt-ie8 .icon--search, .lt-ie8 .icon--menu, .lt-ie8 .icon--librarian {
+  float: left; }
+/* line 299, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
+.lt-ie8 .icon--facebook, .lt-ie8 .icon--twitter, .lt-ie8 .icon--sign-up, .lt-ie8 .icon--close-style2, .lt-ie8 .icon--close-style1 {
+  cursor: pointer; }
+/* line 303, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
+.lt-ie8 .icon--search {
+  border-width: 4px; }
+/* line 307, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
+.lt-ie8 .icon--menu {
+  border-width: 17px 14px; }
+/* line 311, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
+.lt-ie8 .icon--librarian {
+  margin-left: 6px; }
+/* line 316, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
+.lt-ie8 .figure-viewer__next-prev {
+  min-height: 0; }
+/* line 320, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
+.lt-ie8 .figure-viewer__button {
+  cursor: pointer;
+  float: left; }
+/* line 325, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
+.lt-ie8 .easi-search__drop-arrow {
+  display: block; }
+/* line 333, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
+.lt-ie8 .button__inner--previous-style1, .lt-ie8 .button__inner--next-style1, .lt-ie8 .button__inner--back {
+  border-width: 10px; }
+/* line 337, c:/inetpub/wwwroot/_GRUNT/_SASS/scss/icons.scss */
+.lt-ie8 .button__inner--next-style1 {
+  border-right-width: 0; }
 
 
 /*# sourceMappingURL=min.css.map */

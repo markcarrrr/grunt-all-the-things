@@ -46,6 +46,8 @@ ul, ol {
 
 li {
 	padding: 0 0 1em;
+
+	@include clear-float;
 }
 
 label {
@@ -58,6 +60,10 @@ dt {
 	margin-right:5px;
 	display: inline;
 	width: 120px;
+
+	&:after {
+		@include clear-float;
+	}
 }
 
 dl dt {
@@ -94,28 +100,41 @@ section {
 }
 
 .second-nav__recommend-librarian {
-	&-container {
-		background-color: #F6F6F6;
-		border-top: 0 #bcbcbc solid;
+	&-link {
+		background-color: $colour4;
 		display: inline-block;
-		padding: 0.23077em 0.92308em 0.23077em .3em;
+		color: #333;
+		font-family: 'Open Sans Regular', 'Open Sans';
+		font-size: .8em;
+		font-weight: 600;
+		padding: 4px 8px;
 		position: relative;
-	}
 
-		&-slope {
+		&:after {
 			border-bottom: 20px solid transparent;
-			border-right: 15px solid #F6F6F6;
+			border-right: 15px solid $colour4;
+			content: '';
 			height: 0;
 			left: -15px;
 			position: absolute;
 			top: 0;
 			width: 0;
 		}
+	}
+}
 
-		&-link {
-			color: #333;
-			font-family: 'Open Sans Regular', 'Open Sans';
-			font-size: .69231em;
-			font-weight: 600;
+.lt-ie8 {
+	.flex {
+		min-height: 0;
+
+		&__container {
+			float: left;
 		}
+	}
+
+	.second-nav__recommend-librarian {
+		&-link {
+			float: left;
+		}
+	}
 }
