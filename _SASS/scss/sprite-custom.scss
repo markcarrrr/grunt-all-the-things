@@ -1,3 +1,4 @@
+// ICONS
 .icon {
 	background-repeat: no-repeat;
 	display: inline-block;
@@ -27,49 +28,13 @@
 		margin: 0 0 0 4px;
 	}
 
-	&--search {
-		display: block;
-		text-indent: -999em;
-	}
-
-	&--citation-search {
-		background-color: #585858;
-		border: 5px solid #585858;
-		display: inline-block;
-		height: 26px;
-		line-height: 1;
-		width: 26px;
-	}
-
-	&--agu-search {
-		background-color: #4271be;
-		border: 5px solid #4271be;
-		display: inline-block;
-		height: 27px;
-		line-height: 1;
-		width: 27px;
-	}
-
 	&--librarian {
 		padding-right: 4px;
-	}
-
-	&--menu {
-		background-color: #004273;
-		border: solid #004273;
-		border-width: 18px 15px;
-		height: 48px;
-		width: 48px;
 	}
 
 	&--highlight {
 		margin: 0 4px 0 0;
 		vertical-align: middle;
-	}
-
-	&--close-style2,
-	&--close-style1 {
-		display: block;
 	}
 
 	&--open-access,
@@ -135,6 +100,49 @@
 	}
 }
 
+// BUTTONS
+.button {
+	background-repeat: no-repeat;
+	display: inline-block;
+	text-indent: -999em;
+	vertical-align: baseline;
+
+	&--menu {
+		background-color: #004273;
+		border: solid #004273;
+		border-width: 18px 15px;
+		height: 48px;
+		width: 48px;
+	}
+
+	&--close-style1,
+	&--close-style2 {
+		display: block;
+	}
+
+	&--search {
+		display: block;
+		text-indent: -999em;
+	}
+
+	&--citation-search {
+		background-color: #585858;
+		border: 5px solid #585858;
+		display: inline-block;
+		height: 26px;
+		line-height: 1;
+		width: 26px;
+	}
+
+	&--agu-search {
+		background-color: #4271be;
+		border: 5px solid #4271be;
+		display: inline-block;
+		height: 27px;
+		line-height: 1;
+		width: 27px;
+	}
+}
 
 // BESPOKE STYLES
 .journal-overview__link--close {

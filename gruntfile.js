@@ -82,11 +82,11 @@ module.exports = function (grunt) {
 				cssPngPrefix: ".no-svg",
 				cssSvgPrefix: ""
 			},
-			icons: {
+			generated: {
 				options: {
-					spriteElementPath: "_SPRITES/icon-sprite",
-					spritePath: "<%= path.assets %><%= path.images %>icon-sprite.svg",
-					prefix: "icon-",
+					spriteElementPath: "_SPRITES/sprite",
+					spritePath: "<%= path.assets %><%= path.images %>sprite.svg",
+					prefix: "",
 					cssPrefix: "",
 					cssSuffix: "scss",
 					cssPath: "_SASS/scss/",
