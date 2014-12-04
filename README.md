@@ -40,7 +40,6 @@ The CSS naming convention is simply based on the filename e.g. naming a file ico
 			
 ####CAVEATS:
 <ul>
-	<li>If you need to animate and/or scale an SVG you will have to use a single file</li>
 	<li>For hover effects include the hover state as a SVG and manually apply the CSS or use CSS <code>opacity</code>, possibliy use <code>background-color</code> depending on the how the icon is applied</li>
 </ul>
 
