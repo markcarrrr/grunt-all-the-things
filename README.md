@@ -22,8 +22,6 @@ Both <code>.svg</code> and <code>.opacity</code> in the above example would be i
 <dl>
 	<dt>GIT</dt>
 	<dd><a href="https://github.com/Modernizr/grunt-modernizr">grunt-modernizr</a></dd>
-	<dt>Bower</dt>
-	<dd><a href="http://bower.io/">http://bower.io/</a> (for latest full build of Modernizr)</dd>
 </dl>
 
 ---
